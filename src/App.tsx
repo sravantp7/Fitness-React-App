@@ -5,6 +5,7 @@ import Home from '@/components/Home/Home';
 import Benefits from '@/components/Benefits/Benefits';
 import Ourclasses from '@/components/OurClasses/Ourclasses';
 import ContactUs from './components/ContactUs/ContactUs';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);
@@ -29,6 +30,7 @@ function App() {
       <Benefits setSelectedPage={setSelectedPage} />
       <Ourclasses setSelectedPage={setSelectedPage} />
       <ContactUs setSelectedPage={setSelectedPage} />
+      <Footer />
     </div>
   );
 }
